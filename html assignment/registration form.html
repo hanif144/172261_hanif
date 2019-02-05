@@ -1,0 +1,64 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script> 
+<style>h5{font-weight: bold;}</style>
+
+</head>
+
+<body background="logo2.jpg">
+<div class="container">
+<label class="display-4" font-weight="bold">Registration Form</label>
+<form>
+<div class="form-group">
+      <label  for="name" ><h5>Name:</h5></label>
+      <input type="text" class="form-control" id="name" placeholder="Enter name" name="name" required>
+    </div>
+<div class="form-group">
+      <label ><h5>Gender:</h5></label><br>
+      
+      <label class="radio-inline">
+      <input type="radio" name="gender" checked>Male
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="gender">Female
+    </label>
+    </div>
+<div class="form-group">
+      <label for="qualification"><h5>Qualification:</h5></label>
+      <input type="text" class="form-control" id="qualification" placeholder="Enter qualification" name="qualification">
+    </div>
+
+<div class="form-group">
+      <label for="number"><h5>Phone Number:</h5></label>
+      <input type="text" class="form-control" id="number" placeholder="Enter phone number" name="number" pattern="[0-9]{10}">
+    </div>
+<div class="form-group">
+      <label for="email"><h5>Email:</h5></label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+ 
+    <div class="form-group">
+      <label for="pwd"><h5>Password:</h5></label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" pattern="[a-zA-Z0-9!@#$%^&*]{6,}">
+    </div>
+<div class="checkbox">
+    <label><input type="checkbox"> Remember me</label>
+  </div>
+ <div class="form-group">        
+      <div class="col-sm-offset-50 col-sm-50">
+        <center><button type="submit" class="btn btn-primary">Submit</button></center>
+      </div>
+    </div>
+</form>
+</div>
+</body>
+</html>
